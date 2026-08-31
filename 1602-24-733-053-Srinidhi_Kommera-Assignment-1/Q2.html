@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Mark Calculator</h2>
+
+Enter marks for 5 subjects:<br><br>
+
+<input type="number" id="m1" placeholder="Subject 1"><br><br>
+<input type="number" id="m2" placeholder="Subject 2"><br><br>
+<input type="number" id="m3" placeholder="Subject 3"><br><br>
+<input type="number" id="m4" placeholder="Subject 4"><br><br>
+<input type="number" id="m5" placeholder="Subject 5"><br><br>
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="error"></p>
+<p id="result"></p>
+
+<script>
+function calculate() {
+    let marks = [
+        Number(document.getElementById("m1").value),
+        Number(document.getElementById("m2").value),
+        Number(document.getElementById("m3").value),
+        Number(document.getElementById("m4").value),
+        Number(document.getElementById("m5").value)
+    ];
+
+    if (marks.some(m => m < 0 || m > 100)) {
+        document.getElementById("error").innerHTML =
+            "Error: Marks must be between 0 and 100.";
+        document.getElementById("result").innerHTML = "";
+        return;
+    }
+
+    let total = marks.reduce((sum, m) => sum + m, 0);
+    let percentage = total / 5;
+
+    let grade;
+    if (percentage >= 90)
+        grade = "A";
+    else if (percentage >= 80)
+        grade = "B";
+    else if (percentage >= 70)
+        grade = "C";
+    else if (percentage >= 60)
+        grade = "D";
+    else
+        grade = "F";
+
+    let result = percentage >= 40 ? "Pass" : "Fail";
+
+    document.getElementById("error").innerHTML = "";
+    document.getElementById("result").innerHTML =
+        "Total: " + total + "<br>" +
+        "Percentage: " + percentage + "%<br>" +
+        "Grade: " + grade + "<br>" +
+        "Result: " + result;
+}
+</script>
+
+</body>
+</html>
