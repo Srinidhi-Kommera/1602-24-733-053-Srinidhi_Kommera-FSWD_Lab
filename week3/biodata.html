@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>My Biodata</title> 
+<style> 
+* {
+box-sizing: border-box;
+}
+body { 
+font-family: "Segoe UI", Arial, sans-serif; 
+margin: 0; 
+background-color: #eaf3ff; 
+color: #010101; 
+line-height: 1.5;
+} 
+header { 
+background-color: #6585ac; 
+color: white; 
+text-align: center; 
+padding: 24px 20px; 
+} 
+header h1 { 
+margin: 0; 
+font-size: 32px;
+} 
+header p { 
+font-size: 16px; 
+margin: 8px 0 0;
+} 
+main { 
+width: min(90%, 1000px); 
+margin: 22px auto; 
+}
+section { 
+background-color: #ffffff; 
+margin-bottom: 16px; 
+padding: 22px; 
+border: 1px solid #d5e8f6; 
+border-radius: 4px; 
+} 
+section h2 { 
+color: #3d83b5; 
+border-bottom: 1px solid #b9d9ed; 
+padding-bottom: 6px; 
+margin-top: 0;
+} 
+.profile { 
+display: flex; 
+align-items: center; 
+gap: 30px; 
+} 
+.profile .avatar { 
+width: 140px; 
+height: 140px; 
+border-radius: 50%; 
+border: 3px solid #5e97e7; 
+flex-shrink: 0;
+background-color: #e4f2fb;
+object-fit: cover;
+}
+.details p { 
+margin: 10px 0; 
+} 
+.details strong { 
+display: inline-block; 
+width: 150px; 
+color: #4b91bf; 
+} 
+table { 
+width: 100%; 
+border-collapse: collapse; 
+margin-top: 15px; 
+} 
+th, td { 
+border: 1px solid #d0e5f2; 
+padding: 12px; 
+text-align: center; 
+}
+th { 
+background-color: #6585ac; 
+color: #b8c2c9; 
+} 
+tr:nth-child(even) { 
+background-color: #f5fbff; 
+} 
+ul { 
+line-height: 1.8; 
+padding-left: 25px;
+} 
+footer { 
+background-color: #6585ac; 
+color: white; 
+text-align: center; 
+padding: 16px; 
+} 
+@media (max-width: 600px) { 
+main { 
+width: 94%; 
+margin: 18px auto;
+}
+section {
+padding: 20px;
+}
+.profile {
+flex-direction: column; 
+text-align: center; 
+gap: 15px;
+}
+.details strong { 
+display: block; 
+width: auto; 
+}
+table {
+display: block;
+overflow-x: auto;
+white-space: nowrap;
+font-size: 12px;
+}
+header h1 {
+font-size: 30px;
+} 
+}
+</style>
+</head> 
+<body> 
+<header> 
+<h1>BIODATA</h1> 
+<p>Personal and Educational Information</p> 
+</header> 
+<main> 
+<section> 
+<h2>Personal Information</h2> 
+<div class="profile"> 
+<img class="avatar" src="profile.jfif" alt="Srinidhi Kommera's profile photo">
+<div class="details"> 
+<p><strong>Name: </strong> Srinidhi Kommera </p> 
+<p><strong>Date of Birth:</strong> 14 April 2007</p> 
+<p><strong>Gender:</strong> Female</p> 
+<p><strong>Nationality:</strong> Indian</p> <p><strong>Languages:</strong> English, Telugu</p> 
+</div> 
+</div> 
+</section> 
+<section> 
+<h2>Contact Information</h2> 
+<div class="details"> 
+<p><strong>Email:</strong> sriniexxtra@gmail.com</p> <p><strong>Phone:</strong> +91 88888 44444</p> 
+<p><strong>Address:</strong> Hyderabad, Telangana, India</p> 
+</div> 
+</section> 
+<section> 
+<h2>Educational Qualification</h2> 
+<table> 
+<tr> 
+<th>Qualification</th> 
+<th>Institution</th> 
+<th>Year</th> 
+<th>Percentage / CGPA</th> 
+</tr> 
+<tr> 
+<td>B.Tech</td> 
+<td>Vasavi College of Engineering</td> 
+<td>2026</td> 
+<td>9.24 CGPA</td> 
+</tr> 
+<tr> 
+<td>Intermediate</td> 
+<td>FIITJEE</td> 
+<td>2024</td> 
+<td>95.1%</td> 
+</tr> 
+<tr> 
+<td>CBSE</td> 
+<td>Vikas The Concept School</td> 
+<td>2022</td> 
+<td>92 %</td> 
+</tr> 
+</table> 
+</section> 
+<section> 
+<h2>Skills</h2> 
+<ul> 
+<li>HTML and CSS</li> 
+<li>Java Programming</li> 
+<li>Python Programming</li> 
+<li>Communication Skills</li> 
+<li>Problem Solving</li> 
+</ul> 
+</section> 
+<section> 
+<h2>Hobbies</h2> 
+<ul>  
+<li>Listening to Music</li> 
+<li>Playing Badminton</li> 
+<li>Watching Anime</li>
+<li>Vibe Coding</li> 
+</ul> 
+</section> 
+<section> 
+<h2>Declaration</h2> 
+<p>I hereby declare that the information provided above is true 
+and correct to the best of my knowledge and belief. 
+</p>
+<p><strong>Place:</strong> Hyderabad</p> 
+<p><strong>Date: </strong> 3 September 2026</p> 
+<p><strong>Signature:</strong> Srinidhi Kommera</p> 
+</section> 
+</main> 
+<footer> 
+<p>&copy; 2026 Srinidhi Kommera | Biodata</p> 
+</footer> 
+</body> 
+</html> 
